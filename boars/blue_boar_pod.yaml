@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: blue-boar-pod
+  labels:
+    app: demoApp
+spec:
+  containers:
+    - name: blue-boar-container
+      image: jackng971111/blue_boar
+      ports:
+        - containerPort: 3000
