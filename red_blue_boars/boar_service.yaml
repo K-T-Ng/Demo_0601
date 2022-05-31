@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: blue-boar-service
+spec:
+  selector:
+    app: blue-boar
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: red-boar-service
+spec:
+  selector:
+    app: red-boar
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
