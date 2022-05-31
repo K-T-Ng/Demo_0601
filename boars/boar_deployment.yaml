@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: boar-container
-          image: jackng971111/blue_boar
+          image: jackng971111/red_boar
           ports:
             - containerPort: 3000
   selector:
